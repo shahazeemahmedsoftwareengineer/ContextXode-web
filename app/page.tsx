@@ -141,8 +141,10 @@ export default function Home() {
           
           <div className="flex flex-col sm:flex-row gap-6 w-full max-w-2xl justify-center">
             <a 
-              href="/ContextXode_1.0.0_x64_en-US.msi" 
+              href="/ContextXode_1.0.0_x64_en-US.msi?v=1" 
               download 
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex-1 bg-blue-600 hover:bg-blue-500 text-white p-6 rounded-xl text-left transition-all group flex flex-col gap-2"
             >
               <span className="font-bold text-lg flex items-center gap-2">
@@ -153,8 +155,10 @@ export default function Home() {
             </a>
             
             <a 
-              href="/contextxode.exe" 
+              href="/contextxode.exe?v=1" 
               download 
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex-1 bg-slate-800 hover:bg-slate-700 text-white p-6 rounded-xl text-left transition-all border border-slate-700 flex flex-col gap-2"
             >
               <span className="font-bold text-lg flex items-center gap-2">
@@ -177,7 +181,6 @@ export default function Home() {
           <p>© {new Date().getFullYear()} ContextXode. Built for developers.</p>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-slate-300 transition-colors">Privacy Policy</Link>
-            <a href="#" className="hover:text-slate-300 transition-colors">Terms of Service</a>
           </div>
         </div>
       </footer>
