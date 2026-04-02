@@ -140,21 +140,29 @@ export default function Home() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 w-full max-w-2xl justify-center">
-            <button className="flex-1 bg-blue-600 hover:bg-blue-500 text-white p-6 rounded-xl text-left transition-all group flex flex-col gap-2">
+            <a 
+              href="/ContextXode_1.0.0_x64_en-US.msi" 
+              download 
+              className="flex-1 bg-blue-600 hover:bg-blue-500 text-white p-6 rounded-xl text-left transition-all group flex flex-col gap-2"
+            >
               <span className="font-bold text-lg flex items-center gap-2">
                 <Download size={20} />
                 Download Installer
               </span>
               <span className="text-blue-200 text-sm">Windows .msi package (Recommended)</span>
-            </button>
+            </a>
             
-            <button className="flex-1 bg-slate-800 hover:bg-slate-700 text-white p-6 rounded-xl text-left transition-all border border-slate-700 flex flex-col gap-2">
+            <a 
+              href="/contextxode.exe" 
+              download 
+              className="flex-1 bg-slate-800 hover:bg-slate-700 text-white p-6 rounded-xl text-left transition-all border border-slate-700 flex flex-col gap-2"
+            >
               <span className="font-bold text-lg flex items-center gap-2">
                 <Zap size={20} />
                 Download Portable
               </span>
               <span className="text-slate-400 text-sm">Standalone .exe (No install needed)</span>
-            </button>
+            </a>
           </div>
         </section>
 
@@ -168,7 +176,7 @@ export default function Home() {
           </div>
           <p>© {new Date().getFullYear()} ContextXode. Built for developers.</p>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-slate-300 transition-colors">Privacy Policy</a>
+            <Link href="/privacy" className="hover:text-slate-300 transition-colors">Privacy Policy</Link>
             <a href="#" className="hover:text-slate-300 transition-colors">Terms of Service</a>
           </div>
         </div>
